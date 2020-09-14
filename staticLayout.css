@@ -1,0 +1,451 @@
+@font-face {
+    font-family: 'BluuNext';
+    src: url("./assets/Fonts/webfonts/bluunext-bold-webfont.woff") format("woff");
+    } 
+
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url("./assets/Fonts/webfonts/MedievalSharp-Regular.ttf") format("ttf");
+    } 
+
+
+body {
+    margin: 0;
+    background: linear-gradient(
+        rgba(20, 20, 30, 0.75), 
+        rgba(20, 20, 30, 0.75)
+    ),
+    url("./assets/simple-starfield.png");
+    background-size: cover;
+    background-repeat: repeat;
+}
+/* *********** header css *********** */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+header:hover .topThing {
+    background-color: #1e1e2c;
+    transition: background-color .3s ease-in;
+}
+
+header:hover .bottomThing {
+    background-color: #0b0c11;
+    transition: background-color .3s ease-in;
+}
+
+.topThing {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.topThing a{
+    position: relative;
+    height: 0px; 
+    top: 12px;
+}
+
+.topThing a img {
+    margin: 0;
+    padding: 0;
+}
+
+ #login{
+    position: fixed;
+    height: 25px;
+    width: 75px;
+    right: 106px;
+    top: 29px;
+    color: white;
+    background-color: #6b63b5;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.topThing a img {
+    height: 52px;
+    width: 70px;
+}
+
+.bottomThing {
+    background-color: transparent;
+    border-top: .5px solid rgba(153, 153, 153, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    color: white;
+    margin: 20px 15px 20px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    font-size: 13px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+   border-bottom: 1px solid #867ce4;
+}
+
+/* *********** MAIN *********** */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.35) 30%, 
+        rgba(20, 20, 30, 0.90)
+    ),
+    url("./assets/topBackground.webp");
+    margin-bottom: 0px;
+    background-size: cover;
+    animation: zoomIn 3s;
+    -webkit-animation: zoomIn 5s;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.innerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    width: 800px;
+    margin-top: 150px;
+    position: relative;
+    opacity: 1;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#fanClub {
+    width: 350px;
+}
+
+.innerBox p{
+    height: auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0 10px 0;
+    top: 150px;
+}
+
+#bluuNext{
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.3;
+    text-align: center;
+    font-family: "BluuNext", serif;
+}
+
+#pins {
+    max-width: 455px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.innerBox a button {
+    height: 52px;
+    width: 320px;
+    border-radius: 35px;
+    background-color: #6b63b5;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    margin-top: 30px;
+}
+
+.innerBox a button:hover {
+    background-color: #4b4783;
+    transition: background-color .3s ease-in;
+    cursor: pointer;
+}
+
+#diamondOne {
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    margin-top: 75px;
+    transform: rotate(45deg);
+    animation: moveDiamonOne ease 2s;
+    -webkit-animation: moveDiamondOne ease 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveDiamondOne {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#diamondTwo {
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    margin-top: -7px;
+    opacity: 0;
+    transform: rotate(45deg);
+    animation: moveDiamonTwo ease 2s;
+    -webkit-animation: moveDiamondTwo ease 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: .2s;
+}
+
+@keyframes moveDiamondTwo {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#diamondThree {
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    margin-top: -7px;
+    opacity: 0;
+    transform: rotate(45deg);
+    animation: moveDiamonThree ease 2s;
+    -webkit-animation: moveDiamondThree ease 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: .4s;
+}
+
+@keyframes moveDiamondThree {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/* *********** "slide Links" *********** */
+
+.slideMenu {
+    display: flex;
+    margin-top: 90px;
+
+}
+
+.menuLink{
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px 0 25px;
+}
+
+
+.menuLink a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.menuLink a img{
+    width: 358px;
+}
+
+.menuLink>p{
+    line-height: 1.3;
+    width: 300px;
+    font-size: 32px;
+    font-family: "BluuNext", serif;
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 55px;
+}
+
+#linkOne a p{
+    margin-top: -75px;
+    margin-left: -200px;
+    font-size: 11px;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#linkTwo a p{
+    margin-top: -75px;
+    margin-left: -215px;
+    font-size: 11px;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#linkThree a p{
+    margin-top: -75px;
+    margin-left: -210px;
+    font-size: 11px;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+.slideControls {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+}
+
+.circle {
+    width: 43px;
+    height: 43px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: -3px 5px 0px 5px;
+}
+
+.circle img{
+    height: 17px;
+    width: 10px;
+}
+
+#rightArrow{
+    position: relative;
+    top: 12px;
+    left: 20px;
+}
+
+#leftArrow{
+    position: relative;
+    top: 11px;
+    left: 15px;
+    height: 19px;
+    width: 11px;
+}
+
+.dot{
+    width: 4px;
+    height: 4px;
+    border: 1px solid rgb(75, 75, 75);
+    background-color: rgb(75, 75, 75);
+    border-radius: 50%;
+    margin: 20px 0px 0px 0px ;
+}
+
+#dotOne {
+    background-color: white;
+}
+
+#line {
+    height: 1px;
+    width: 720px;
+    border-bottom: 1px solid rgba(82, 82, 82, .4);
+    margin: 22px 0px 0 0px ;
+}
+
+#empty {
+    width: 100px;
+    height: 45px;
+    border: 1px solid transparent;
+}
+
+.backToHogwarts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: 100px;
+    left: 210px;
+}
+
+.backToHogwarts img{
+    position: relative;
+    top: 100px;
+    height: 565px;
+    margin: 0px;
+}
+
+.tint {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 300px;
+    height: 565px;
+    background: linear-gradient(to right, rgba(0, 9, 15, 0.6), rgba(0, 0, 0, .0));
+
+}
+
+.backToHogwartsText{
+    position: relative;
+    top: -360px;
+    right: 860px;
+    text-align: right;
+    width: 440px;
+    color: white;
+}
+
+#medText {
+    font-family: 'medievalSharp';
+    font-size: 18px;
+    
+}
+
+#bluuText{
+    font-family: "bluuNext";
+    font-size: 60px;
+    line-height: 1;
+    margin: 0;
+}
+
+#poppinsText{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+#livestreamButton {
+    height: 52px;
+    width: 250px;
+    border-radius: 35px;
+    background-color: #6b63b5;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.bottomSpace {
+    position: relative;
+    top: 400px;
+    height: 1000px;
+    widows: 20px;
+    border: 9px solid transparent;
+    z-index: 10;
+}
+
