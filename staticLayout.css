@@ -440,6 +440,12 @@ nav a:hover {
     margin-top: 5px;
 }
 
+#livestreamButton:hover{
+    background-color: #4b4783;
+    transition: background-color .3s ease-in;
+    cursor: pointer;
+}
+
 .bottomSpace {
     position: relative;
     top: 400px;
