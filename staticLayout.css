@@ -16,7 +16,7 @@ body {
         rgba(20, 20, 30, 0.75)
     ),
     url("./assets/simple-starfield.png");
-    background-size: cover;
+    background-size: 1000px;
     background-repeat: repeat;
 }
 /* *********** header css *********** */
@@ -99,7 +99,7 @@ nav a:hover {
 
 /* *********** MAIN *********** */
 
-.wrapper {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,12 +108,13 @@ nav a:hover {
         rgba(0, 0, 0, 0.35) 30%, 
         rgba(20, 20, 30, 0.90)
     ),
-    url("./assets/topBackground.webp");
+    url("./assets/topBackground2.webp");
     margin-bottom: 0px;
     background-size: cover;
     animation: zoomIn 3s;
     -webkit-animation: zoomIn 5s;
 }
+
 
 @keyframes zoomIn {
     0% {
@@ -192,11 +193,24 @@ nav a:hover {
     cursor: pointer;
 }
 
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -160px;
+    margin: 0;
+}
+
+.movingDiamonds {
+    margin-top: 0;
+}
+
 #diamondOne {
     width: 18px;
     height: 18px;
     border: 1px solid white;
-    margin-top: 75px;
+    margin-top: px;
     transform: rotate(45deg);
     animation: moveDiamonOne ease 2s;
     -webkit-animation: moveDiamondOne ease 2s;
@@ -266,6 +280,7 @@ nav a:hover {
 
 
 .menuLink a{
+    display: ;
     color: white;
     text-decoration: none;
 }
@@ -277,6 +292,7 @@ nav a:hover {
 }
 
 .menuLink>p{
+    color: white;
     line-height: 1.3;
     width: 300px;
     font-size: 32px;
@@ -288,7 +304,7 @@ nav a:hover {
 
 #linkOne a p{
     margin-top: -75px;
-    margin-left: -200px;
+    margin-left: 50px;
     font-size: 11px;
     font-family: 'MedievalSharp', cursive;
     font-weight: bold;
@@ -297,7 +313,7 @@ nav a:hover {
 
 #linkTwo a p{
     margin-top: -75px;
-    margin-left: -215px;
+    margin-left: 50px;
     font-size: 11px;
     font-family: 'MedievalSharp', cursive;
     font-weight: bold;
@@ -306,16 +322,17 @@ nav a:hover {
 
 #linkThree a p{
     margin-top: -75px;
-    margin-left: -210px;
+    margin-left: 50px;
     font-size: 11px;
     font-family: 'MedievalSharp', cursive;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-
-
 .slideControls {
+    position: relative;
+    top: -180px;
+    left: 260px;
     display: flex;
     justify-content: space-between;
     width: 1050px;
@@ -376,36 +393,36 @@ nav a:hover {
 
 .backToHogwarts{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     position: relative;
-    top: 100px;
-    left: 210px;
+    margin-top: 0px;
+    top: -70px;
+    left: 0px;
 }
 
 .backToHogwarts img{
     position: relative;
-    top: 100px;
+    right: 75px;
     height: 565px;
     margin: 0px;
 }
 
 .tint {
-    position: absolute;
-    top: 100px;
-    left: 0px;
+    position: relative;
+    left: 84px;
     width: 300px;
     height: 565px;
-    background: linear-gradient(to right, rgba(0, 9, 15, 0.6), rgba(0, 0, 0, .0));
+    background: linear-gradient(to right, rgba(6, 15, 25, 0.6), rgba(0, 0, 0, .0));
 
 }
 
 .backToHogwartsText{
     position: relative;
-    top: -360px;
-    right: 860px;
+    top: 75px;
+    left: 225px;
     text-align: right;
-    width: 440px;
+    width: 800px;
     color: white;
 }
 
