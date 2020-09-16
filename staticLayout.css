@@ -396,34 +396,39 @@ nav a:hover {
     flex-direction: row-reverse;
     justify-content: flex-end;
     position: relative;
+    height: 1000px;
     margin-top: 0px;
     top: -70px;
     left: 0px;
 }
 
+.backToHogwartsImg{
+    position: relative;
+    left: 250px;
+}
+
 .backToHogwarts img{
     position: relative;
-    right: 75px;
-    height: 565px;
+    height: 575px;
     margin: 0px;
 }
 
 .tint {
-    position: relative;
-    left: 84px;
+    position: absolute;
     width: 300px;
-    height: 565px;
+    height: 575px;
     background: linear-gradient(to right, rgba(6, 15, 25, 0.6), rgba(0, 0, 0, .0));
-
+    z-index: 1;
 }
 
 .backToHogwartsText{
     position: relative;
     top: 75px;
-    left: 225px;
+    left: 375px;
     text-align: right;
-    width: 800px;
+    width: 400px;
     color: white;
+    z-index: 2;
 }
 
 #medText {
@@ -461,14 +466,5 @@ nav a:hover {
     background-color: #4b4783;
     transition: background-color .3s ease-in;
     cursor: pointer;
-}
-
-.bottomSpace {
-    position: relative;
-    top: 400px;
-    height: 1000px;
-    widows: 20px;
-    border: 9px solid transparent;
-    z-index: 10;
 }
 
